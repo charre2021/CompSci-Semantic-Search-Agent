@@ -1,0 +1,22 @@
+[project]
+name = "semantic-search"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "charre2021",email = "charre2021@outlook.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13,<4.0.0"
+dependencies = [
+    "langchain-community (>=0.4.1,<0.5.0)",
+    "pypdf (>=6.6.2,<7.0.0)",
+    "dotenv (>=0.9.9,<0.10.0)",
+    "langchain-openai (>=1.1.7,<2.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "semantic_search", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
