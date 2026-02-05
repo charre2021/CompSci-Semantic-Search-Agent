@@ -1,7 +1,6 @@
 from os import getenv
 from glob import glob
 from pymongo import MongoClient
-from pymongo.operations import SearchIndexModel
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_mongodb import MongoDBAtlasVectorSearch
 from langchain_text_splitters import RecursiveCharacterTextSplitter
